@@ -63,12 +63,24 @@
     background-color: var(--color-primary);
 }
 
-
 .navbar ul li a:hover,
 .navbar ul li a:active,
 .navbar ul li a:focus{
     background-color: var(--color-dark);
     color:var(--color-primary);
+}
+
+.content-area{
+  flex-direction: column;
+}
+
+.main-content-area{
+    border: 1px solid red;
+    padding:10px;
+}
+
+.sidebar-section{
+    border: 1px solid blueviolet;
 }
 
 @media all and (min-width:1180px) {
@@ -78,4 +90,15 @@
     .navbar li{
         flex-grow: 1;
     }
+    .content-area{
+        flex-direction: row;
+      }
+
+      .main-content-area{
+        flex-grow: 1;
+      }
+
+      .sidebar-section {
+        flex:0 0 400px;
+      }
 }
