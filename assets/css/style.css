@@ -67,7 +67,7 @@
 .navbar ul li a:active,
 .navbar ul li a:focus{
     background-color: var(--color-dark);
-    color:var(--color-primary);
+    color:var(--color-gray);
 }
 
 .content-area{
